@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap");
 
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 /* ! main cta section */
 .main-cta {
@@ -12,6 +12,7 @@
     background-size: cover;
     background-position: center;
     height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -21,11 +22,26 @@
 nav {
     background-color: rgba(0, 0, 0, 0.5);
 }
-
+nav div a {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+nav .logo {
+    margin-left: 10%;
+}
+.my-nav-menu ul li a {
+    margin-right: 20px;
+}
+.my-sign-menu ul li a {
+    margin-left: 20px;
+}
 /* * main */
 
 /* TODO: centering main text area */
 .main-cta main {
+    width: 80%;
     margin: 0;
     position: absolute;
     top: 50%;
@@ -55,9 +71,16 @@ nav {
     font-family: "Open Sans", sans-serif;
     font-size: 18px;
     color: white;
-    margin: 20px auto;
+    margin: 40px auto;
     text-align: center;
     letter-spacing: 2px;
+}
+.text-area button {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: orange;
+    padding: 15px 70px;
 }
 
 /* * footer */
@@ -70,7 +93,8 @@ footer {
 footer p {
     text-align: center;
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
     font-weight: bold;
 }
 
