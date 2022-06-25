@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap");
 
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
+/* ! typography */
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+}
+h1,
+h2,
+h3 {
+    font-family: "Bebas Neue", cursive;
+}
 
 /* ! main cta section */
 .main-cta {
@@ -15,7 +20,7 @@
     width: 100vw;
     display: flex;
     flex-direction: column;
-    position: relative;
+    /* position: absolute; */
 }
 
 /* * navbar */
@@ -23,23 +28,23 @@ nav {
     background-color: rgba(0, 0, 0, 0.5);
 }
 nav div a {
-    font-family: "Open Sans", sans-serif;
     font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
 }
 nav .logo {
     margin-left: 10%;
+    font-size: 24px;
+    letter-spacing: 10%;
 }
 .my-nav-menu ul li a {
     margin-right: 20px;
 }
 .my-sign-menu ul li a {
-    margin-left: 20px;
+    margin-right: 20px;
 }
-/* * main */
 
-/* TODO: centering main text area */
+/* * main */
 .main-cta main {
     width: 80%;
     margin: 0;
@@ -49,8 +54,7 @@ nav .logo {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
-
-.text-area {
+.main-cta .text-area {
     display: flex;
     width: 100%;
     height: 80%;
@@ -58,24 +62,22 @@ nav .logo {
     flex-direction: column;
     align-items: center;
 }
-.text-area h1 {
-    font-family: "Bebas Neue", cursive;
+.main-cta .text-area h1 {
     font-weight: bold;
-    font-size: 80px;
+    font-size: 72px;
     color: white;
     margin: auto;
     text-align: center;
-    letter-spacing: 10px;
+    letter-spacing: 3px;
 }
-.text-area p {
-    font-family: "Open Sans", sans-serif;
-    font-size: 18px;
+.main-cta .text-area h3 {
+    font-size: 24px;
     color: white;
     margin: 40px auto;
     text-align: center;
     letter-spacing: 2px;
 }
-.text-area button {
+.main-cta .text-area button {
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     text-transform: uppercase;
@@ -93,9 +95,53 @@ footer {
 footer p {
     text-align: center;
     color: white;
+    font-size: 12px;
     margin-bottom: 10px;
     text-transform: uppercase;
     font-weight: bold;
 }
 
-/* ! gp options section */
+/* ! about-gallery section */
+.about-gallery-options {
+    background-image: url(../images/the-games-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* * text area */
+.about-gallery-options .text-area {
+    margin-right: 40px;
+}
+.about-gallery-options .text-area h1 {
+    font-weight: bold;
+    font-size: 72px;
+    color: white;
+    margin: auto;
+    text-align: center;
+    letter-spacing: 3px;
+}
+.about-gallery-options .text-area h3 {
+    font-size: 24px;
+    color: white;
+    margin: 40px auto;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+/* * carousel */
+.carousel-container {
+    width: 60%;
+    height: 50%;
+}
+
+/* * responsive */
+@media (max-width: 980px) {
+    .about-gallery-options {
+        flex-direction: column;
+    }
+}
