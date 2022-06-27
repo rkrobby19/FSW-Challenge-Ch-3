@@ -243,3 +243,12 @@ footer p {
     display: none;
     overflow: hidden;
 }
+
+/* ! syst req section */
+.syst-req {
+    background-image: url(../images/requirements.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
