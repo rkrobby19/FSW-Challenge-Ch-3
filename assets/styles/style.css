@@ -96,9 +96,15 @@ footer p {
     text-align: center;
     color: white;
     font-size: 12px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     text-transform: uppercase;
     font-weight: bold;
+}
+/* * media query */
+@media (max-width: 980px) {
+    .main-cta .text-area h1 {
+        font-size: 56px;
+    }
 }
 
 /* ! about-gallery section */
@@ -161,6 +167,13 @@ footer p {
     .carousel-container {
         width: 80%;
         height: 40%;
+        margin-top: 10%;
+    }
+    .about-gallery-options .text-area h3 {
+        text-align: center;
+    }
+    .about-gallery-options .text-area h1 {
+        font-size: 40px;
     }
 }
 
@@ -251,4 +264,45 @@ footer p {
     background-position: center;
     height: 100vh;
     width: 100vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.syst-req h3 {
+    font-size: 14px;
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.syst-req h1 {
+    font-size: 56px;
+    text-transform: capitalize;
+    letter-spacing: 11px;
+}
+
+/* * table container */
+.syst-req .table-container {
+    width: 42%;
+    margin-top: 4%;
+    margin-left: 8%;
+}
+.table-container .table {
+    color: white;
+    text-align: left;
+    text-transform: capitalize;
+}
+.table-container .table h3 {
+    color: #ffb548;
+    text-align: left;
+}
+
+/* * media query */
+@media (max-width: 980px) {
+    .syst-req .table-container {
+        width: 80%;
+    }
+    .syst-req h1 {
+        font-size: 40px;
+    }
 }
