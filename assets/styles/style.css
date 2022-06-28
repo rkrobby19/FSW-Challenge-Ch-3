@@ -20,7 +20,6 @@ h3 {
     width: 100vw;
     display: flex;
     flex-direction: column;
-    /* position: absolute; */
 }
 
 /* * navbar */
@@ -152,8 +151,14 @@ footer p {
 .my-switch-left {
     left: -10%;
 }
+.my-switch-left img {
+    width: 25%;
+}
 .my-switch-right {
     right: -10%;
+}
+.my-switch-right img {
+    width: 25%;
 }
 
 /* * responsive about-gallery section */
@@ -305,4 +310,49 @@ footer p {
     .syst-req h1 {
         font-size: 40px;
     }
+}
+
+/* ! quotes section */
+.press-quotes {
+    background-image: url(../images/top-score-bg.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.press-quotes h1 {
+    font-size: 56px;
+    letter-spacing: 4px;
+}
+.card {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+.card .header {
+    display: flex;
+    padding: 1rem 1rem 1rem 1rem;
+}
+.card .body {
+    padding: 0 1rem 1rem 1rem;
+}
+.img-container img {
+    box-shadow: 8px 4px 2px 2px #ffb548;
+    border-radius: 50%;
+}
+h3.name {
+    color: #ffb548;
+    margin-bottom: 0;
+}
+p.profession,
+p.date {
+    margin-bottom: 0;
+    color: rgba(256, 256, 256, 0.5);
+}
+
+.press-quotes .text-area {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
