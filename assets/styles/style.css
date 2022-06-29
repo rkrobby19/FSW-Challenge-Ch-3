@@ -329,6 +329,15 @@ footer p {
 }
 .card {
     background-color: rgba(255, 255, 255, 0.08);
+    width: 450px;
+}
+.card .c-one {
+    position: relative;
+    left: 22%;
+}
+.card .c-three {
+    position: relative;
+    left: 18%;
 }
 .card .header {
     display: flex;
@@ -355,4 +364,23 @@ p.date {
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+/* * media query */
+@media (max-width: 980px) {
+    .card {
+        width: 90%;
+    }
+    .card .c-one {
+        position: relative;
+        left: 0;
+    }
+    .card .c-three {
+        position: relative;
+        left: 0;
+    }
+}
+@media (max-width: 580px) {
+    .press-quotes {
+        height: 100%;
+    }
 }
