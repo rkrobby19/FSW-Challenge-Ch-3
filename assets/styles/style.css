@@ -85,7 +85,7 @@ nav .logo {
 }
 
 /* * footer */
-footer {
+.main-cta footer {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -330,12 +330,14 @@ footer p {
 .card {
     background-color: rgba(255, 255, 255, 0.08);
     width: 450px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
-.card .c-one {
+.card.c-one {
     position: relative;
     left: 22%;
 }
-.card .c-three {
+.card.c-three {
     position: relative;
     left: 18%;
 }
@@ -370,11 +372,11 @@ p.date {
     .card {
         width: 90%;
     }
-    .card .c-one {
+    .card.c-one {
         position: relative;
         left: 0;
     }
-    .card .c-three {
+    .card.c-three {
         position: relative;
         left: 0;
     }
@@ -384,3 +386,36 @@ p.date {
         height: 100%;
     }
 }
+
+/* ! subscribe section */
+.subscribe {
+    background-image: url(../images/newsletter.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    position: relative;
+}
+/* .subscribe .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.subscribe .footer .container {
+    width: 80%;
+}
+.subscribe .footer .menu-container {
+    display: flex;
+    justify-content: flex-end;
+}
+.subscribe .footer .copyright {
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 580px) {
+    .subscribe {
+        height: 100%;
+    }
+} */
