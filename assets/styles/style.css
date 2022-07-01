@@ -86,12 +86,12 @@ nav .logo {
 
 /* * footer */
 .main-cta footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     right: 0;
 }
-footer p {
+.main-cta footer p {
     text-align: center;
     color: white;
     font-size: 12px;
@@ -330,14 +330,12 @@ footer p {
 .card {
     background-color: rgba(255, 255, 255, 0.08);
     width: 450px;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
 }
-.card.c-one {
+.card .c-one {
     position: relative;
     left: 22%;
 }
-.card.c-three {
+.card .c-three {
     position: relative;
     left: 18%;
 }
@@ -372,11 +370,11 @@ p.date {
     .card {
         width: 90%;
     }
-    .card.c-one {
+    .card .c-one {
         position: relative;
         left: 0;
     }
-    .card.c-three {
+    .card .c-three {
         position: relative;
         left: 0;
     }
@@ -395,27 +393,96 @@ p.date {
     height: 100vh;
     width: 100vw;
     color: white;
-    position: relative;
+    position: absolute;
+    display: flex;
+    align-items: center;
 }
-/* .subscribe .footer {
+.subscribe h3 {
+    font-size: 24px;
+    width: 180px;
+    letter-spacing: 4px;
+}
+.subscribe h1 {
+    font-size: 56px;
+    letter-spacing: 10px;
+    width: 75%;
+}
+.subscribe .my-hero-image {
+    width: 30%;
+    position: relative;
+    left: 12%;
+}
+.subscribe .text-area {
+    width: 45%;
+    z-index: 1;
+    position: relative;
+    left: 15%;
+}
+.mail {
+    background-color: rgba(255, 255, 255, 0.08);
+    width: 360px;
+    padding: 2px;
+}
+.subs {
+    background-color: #ffb548;
+    width: 260px;
+    padding: 17px;
+}
+.email {
+    color: #ffb548;
+}
+.small {
+    font-size: 14px;
+}
+.grey {
+    color: rgba(256, 256, 256, 0.5);
+}
+.mask {
+    mask-image: radial-gradient(circle, white, grey, black);
+}
+.subscribe footer {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
+    margin: auto;
+    width: 75%;
 }
-.subscribe .footer .container {
-    width: 80%;
+.subscribe footer .menu {
+    width: 100%;
+    margin: auto;
 }
-.subscribe .footer .menu-container {
-    display: flex;
-    justify-content: flex-end;
+.subscribe footer .menu .nav li a {
+    margin-left: 8px;
+    margin-right: 8px;
+    color: white;
 }
-.subscribe .footer .copyright {
+.subscribe footer .menu .nav li:nth-child(5) {
+    margin-right: 20px;
+}
+.subscribe footer .menu .nav li:last-child {
+    margin-right: 0;
+}
+.copyrights {
     display: flex;
     justify-content: space-between;
+    border-top: 1px solid white;
+    padding-top: 10px;
+    margin-bottom: 20px;
 }
 @media (max-width: 580px) {
+    .subscribe .text-area {
+        width: 80%;
+        z-index: 1;
+        position: relative;
+        left: -35%;
+    }
+    .subscribe .my-hero-image {
+        width: 50%;
+        position: relative;
+        left: 15%;
+    }
     .subscribe {
         height: 100%;
     }
-} */
+}
