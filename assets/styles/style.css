@@ -4,45 +4,59 @@
 body {
     font-family: "Open Sans", sans-serif;
     font-size: 18px;
+    color: white;
 }
 h1,
 h2,
 h3 {
     font-family: "Bebas Neue", cursive;
 }
-
-/* ! main cta section */
-.main-cta {
-    background-image: url(../images/main-bg.jpg);
+h1 {
+    font-size: 56px;
+}
+h3 {
+    font-size: 24px;
+}
+.my-text-sub {
+    font-size: 14px;
+}
+.my-text-btn {
+    font-size: 16px;
+}
+.my-text-nav {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.my-text-grey {
+    color: rgba(255, 255, 255, 0.08);
+}
+.my-text-orange {
+    color: #ffb548;
+}
+section {
     background-size: cover;
     background-position: center;
     height: 100vh;
     width: 100vw;
-    display: flex;
-    flex-direction: column;
 }
 
+/* ! main cta section */
+section.main-cta {
+    background-image: url(../images/main-bg.jpg);
+}
 /* * navbar */
 nav {
     background-color: rgba(0, 0, 0, 0.5);
 }
-nav div a {
-    font-size: 12px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
 nav .logo {
-    margin-left: 10%;
     font-size: 24px;
     letter-spacing: 10%;
+    margin-left: 10%;
 }
-.my-nav-menu ul li a {
-    margin-right: 20px;
-}
+.my-nav-menu ul li a,
 .my-sign-menu ul li a {
     margin-right: 20px;
 }
-
 /* * main */
 .main-cta main {
     width: 80%;
@@ -62,49 +76,41 @@ nav .logo {
     align-items: center;
 }
 .main-cta .text-area h1 {
-    font-weight: bold;
     font-size: 72px;
-    color: white;
+    letter-spacing: 15px;
     margin: auto;
-    text-align: center;
-    letter-spacing: 3px;
+    width: 100%;
 }
 .main-cta .text-area h3 {
-    font-size: 24px;
-    color: white;
     margin: 40px auto;
-    text-align: center;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
+    font-weight: normal;
 }
 .main-cta .text-area button {
-    font-family: "Open Sans", sans-serif;
-    font-size: 16px;
-    text-transform: uppercase;
-    background-color: orange;
+    background-color: #ffb548;
     padding: 15px 70px;
 }
-
 /* * footer */
 .main-cta footer {
-    position: relative;
+    position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
 }
 .main-cta footer p {
-    text-align: center;
-    color: white;
-    font-size: 12px;
     margin-bottom: 30px;
-    text-transform: uppercase;
-    font-weight: bold;
 }
 /* * media query */
 @media (max-width: 980px) {
     .main-cta .text-area h1 {
         font-size: 56px;
+        letter-spacing: 4px;
+    }
+    .main-cta .text-area h3 {
+        letter-spacing: 1px;
     }
 }
+/* ! end main cta section */
 
 /* ! about-gallery section */
 .about-gallery-options {
