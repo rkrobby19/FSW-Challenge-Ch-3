@@ -28,7 +28,7 @@ h3 {
     text-transform: uppercase;
 }
 .my-text-grey {
-    color: rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.5);
 }
 .my-text-orange {
     color: #ffb548;
@@ -360,76 +360,44 @@ p.date {
 /* ! end quotes section */
 
 /* ! subscribe section */
-.subscribe {
+section.subscribe {
     background-image: url(../images/newsletter.png);
-    background-size: cover;
-    background-position: center;
+}
+section.subscribe .container-fluid {
     height: 100vh;
-    width: 100vw;
-    color: white;
-    position: absolute;
-    display: flex;
-    align-items: center;
 }
 .subscribe h3 {
-    font-size: 24px;
-    width: 180px;
     letter-spacing: 4px;
 }
 .subscribe h1 {
-    font-size: 56px;
-    letter-spacing: 10px;
-    width: 75%;
+    letter-spacing: 16px;
 }
 .subscribe .my-hero-image {
-    width: 30%;
     position: relative;
-    left: 12%;
+    left: 5%;
 }
 .subscribe .text-area {
-    width: 45%;
+    width: 50%;
     z-index: 1;
-    position: relative;
-    left: 15%;
+    margin-left: 10%;
 }
+/* * button */
 .mail {
     background-color: rgba(255, 255, 255, 0.08);
-    width: 360px;
-    padding: 2px;
+    padding: 2px 70px;
+    margin-right: 1%;
+    margin-bottom: 2%;
 }
 .subs {
     background-color: #ffb548;
-    width: 260px;
-    padding: 17px;
+    padding: 16px 40px;
+    margin-bottom: 2%;
 }
-.email {
-    color: #ffb548;
-}
-.small {
-    font-size: 14px;
-}
-.grey {
-    color: rgba(256, 256, 256, 0.5);
-}
-.mask {
-    mask-image: radial-gradient(circle, white, grey, black);
-}
-.subscribe footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 75%;
-}
-.subscribe footer .menu {
-    width: 100%;
-    margin: auto;
-}
+/* TODO: find image mask */
+/* * footer */
 .subscribe footer .menu .nav li a {
-    margin-left: 8px;
-    margin-right: 8px;
     color: white;
+    margin: 0 0.5rem;
 }
 .subscribe footer .menu .nav li:nth-child(5) {
     margin-right: 20px;
@@ -438,25 +406,53 @@ p.date {
     margin-right: 0;
 }
 .copyrights {
-    display: flex;
-    justify-content: space-between;
     border-top: 1px solid white;
     padding-top: 10px;
     margin-bottom: 20px;
 }
+/* * media query */
 @media (max-width: 580px) {
+    .subscribe h3 {
+        letter-spacing: 1px;
+    }
+    .subscribe h1 {
+        letter-spacing: 4px;
+    }
     .subscribe .text-area {
         width: 80%;
-        z-index: 1;
         position: relative;
-        left: -35%;
+        left: -20%;
     }
-    .subscribe .my-hero-image {
-        width: 50%;
-        position: relative;
-        left: 15%;
+    .mail {
+        padding: 2px 40px;
     }
+    .subs {
+        padding: 16px 40px;
+    }
+}
+@media (max-width: 380px) {
     .subscribe {
         height: 100%;
     }
+    section.subscribe .container-fluid {
+        height: 100%;
+    }
+    .subscribe .container-lg {
+        margin: 2rem;
+    }
+    .subscribe .text-area {
+        width: 80%;
+        position: relative;
+        left: -25%;
+    }
+    .subscribe h1 {
+        font-size: 40px;
+    }
+    .mail {
+        padding: 2px 15px;
+    }
+    .subs {
+        padding: 8px 10px;
+    }
 }
+/* ! end subscribe section */

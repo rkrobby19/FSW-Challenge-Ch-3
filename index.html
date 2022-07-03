@@ -293,7 +293,7 @@
         <!-- ! end syst req section -->
 
         <!-- ! press quotes section -->
-        <section
+        <!-- <section
             id="press-quotes"
             class="press-quotes d-flex justify-content-center align-items-center"
         >
@@ -309,7 +309,10 @@
                                 this platform
                             </p>
                             <p>
-                                <button href="#" class="btn fw-bold btn-lg">
+                                <button
+                                    href="#"
+                                    class="btn fw-bold btn-lg my-text-btn"
+                                >
                                     see more
                                 </button>
                             </p>
@@ -324,11 +327,13 @@
                                         alt="..."
                                     />
                                 </div>
-                                <div class="flex-grow-1 ms-3 name">
+                                <div class="flex-grow-1 ms-3 name lh-1">
                                     <h3 class="name my-text-orange">
-                                        evan lahti
+                                        evan lahti <br />
+                                        <span class="my-text-grey my-text-sub"
+                                            >PC Gamer</span
+                                        >
                                     </h3>
-                                    <span class="my-text-grey">PC Gamer</span>
                                 </div>
                                 <img
                                     src="assets/images/twitter-card.png"
@@ -337,7 +342,9 @@
                             </div>
                             <div class="body">
                                 <q> One of my gaming highlight of the year </q>
-                                <p class="date my-text-grey">June 18, 2021</p>
+                                <p class="date my-text-sub my-text-grey">
+                                    June 18, 2021
+                                </p>
                             </div>
                         </div>
 
@@ -350,12 +357,12 @@
                                     />
                                 </div>
                                 <div class="flex-grow-1 ms-3 name">
-                                    <h3 class="name my-text-orange">
-                                        Jada Griffin
+                                    <h3 class="name my-text-orange lh-1">
+                                        Jada Griffin <br />
+                                        <span class="my-text-grey my-text-sub"
+                                            >Nerdreactor</span
+                                        >
                                     </h3>
-                                    <span class="my-text-grey"
-                                        >Nerdreactor</span
-                                    >
                                 </div>
                                 <img
                                     src="assets/images/twitter-card.png"
@@ -367,7 +374,9 @@
                                     The next big thing in the world of streaming
                                     and survival games
                                 </q>
-                                <p class="date my-text-grey">July 10, 2021</p>
+                                <p class="date my-text-sub my-text-grey">
+                                    July 10, 2021
+                                </p>
                             </div>
                         </div>
 
@@ -380,10 +389,12 @@
                                     />
                                 </div>
                                 <div class="flex-grow-1 ms-3 name">
-                                    <h3 class="name my-text-orange">
-                                        aaron williams
+                                    <h3 class="name my-text-orange lh-1">
+                                        aaron williams <br />
+                                        <span class="my-text-grey my-text-sub"
+                                            >Uproxx</span
+                                        >
                                     </h3>
-                                    <span class="my-text-grey">Uproxx</span>
                                 </div>
                                 <img
                                     src="assets/images/twitter-card.png"
@@ -395,7 +406,7 @@
                                     Snoop Dogg playing the wildly entertaining
                                     'SOS' is ridiculous
                                 </q>
-                                <p class="date my-text-grey">
+                                <p class="date my-text-sub my-text-grey">
                                     December 24, 2018
                                 </p>
                             </div>
@@ -403,34 +414,52 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- ! end press quotes section -->
 
         <!-- ! subscribe section -->
-        <!-- <section id="subscribe" class="subscribe">
-            <img
-                class="my-hero-image mask"
-                src="assets/images/skull.png"
-                alt=""
-            />
-            <div class="text-area">
-                <h3>want to stay in touch?</h3>
-                <h1>newsletter subscribe</h1>
-                <p class="lead">
-                    In order to start receiving our news, all you have to do is
-                    enter your email address. Everything else will be taken care
-                    of by us. We will send you emails containing information
-                    about game. We don’t spam.
-                </p>
-
-                <a href="#" class="btn fw-bold btn-lg mail"
-                    ><span class="small grey">Your email address</span> <br />
-                    <span class="email">youremail@binar.co.id</span></a
+        <section
+            id="subscribe"
+            class="subscribe d-flex align-items-center justify-content-center flex-column"
+        >
+            <div
+                class="container-fluid d-flex align-items-center justify-content-center"
+            >
+                <div
+                    class="container-lg d-flex align-items-center justify-content-center"
                 >
-                <a href="#" class="btn fw-bold btn-lg subs">Subscribe now</a>
-            </div>
+                    <img
+                        class="my-hero-image"
+                        src="assets/images/skull.png"
+                        alt=""
+                        style="width: 30%"
+                    />
+                    <div class="text-area">
+                        <h3>want to stay in touch?</h3>
+                        <h1>newsletter subscribe</h1>
+                        <p>
+                            In order to start receiving our news, all you have
+                            to do is enter your email address. Everything else
+                            will be taken care of by us. We will send you emails
+                            containing information about game. We don’t spam.
+                        </p>
 
-            <footer>
+                        <a href="#" class="mail btn fw-bold btn-lg text-start"
+                            ><span class="my-text-grey my-text-sub"
+                                >Your email address</span
+                            >
+                            <br />
+                            <span class="my-text-orange"
+                                >youremail@binar.co.id</span
+                            ></a
+                        >
+                        <a href="#" class="subs btn fw-bold btn-lg subs"
+                            >Subscribe now</a
+                        >
+                    </div>
+                </div>
+            </div>
+            <footer style="width: 80%">
                 <div class="menu">
                     <ul class="nav justify-content-end">
                         <li class="nav-item">
@@ -472,16 +501,23 @@
                         </li>
                     </ul>
                 </div>
-                <div class="copyrights">
-                    <p class="small grey">
-                        © 2018 Your Games, Inc. All Rights Reserved
-                    </p>
-                    <p class="small">
-                        Privacy Policy | Terms of Services | Code of Conduct
-                    </p>
+                <div class="copyrights container">
+                    <div class="row">
+                        <div class="col-md">
+                            <p class="my-text-sub my-text-grey">
+                                © 2018 Your Games, Inc. All Rights Reserved
+                            </p>
+                        </div>
+                        <div class="col-md">
+                            <p class="my-text-sub text-end">
+                                Privacy Policy | Terms of Services | Code of
+                                Conduct
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </footer>
-        </section> -->
+        </section>
         <!-- ! end subscribe section -->
 
         <!-- ! JavaScript Bundle with Popper -->
