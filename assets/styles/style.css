@@ -162,12 +162,8 @@ section.about-gallery-options {
 /* ! end about-gallery section */
 
 /* ! features section */
-.features {
+section.features {
     background-image: url(../images/features.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100vw;
 }
 .features main {
     width: 30%;
@@ -177,24 +173,11 @@ section.about-gallery-options {
     -ms-transform: translate(0%, -50%);
     transform: translate(0%, -50%);
 }
-@media (max-width: 980px) {
-    .features main {
-        width: 50%;
-        left: 50%;
-        -ms-transform: translate(-25%, -50%);
-        transform: translate(-25%, -50%);
-    }
-}
-
 .features h3 {
-    font-size: 24px;
     letter-spacing: 2px;
-    color: white;
 }
 .features h1 {
-    font-size: 56px;
-    letter-spacing: 4px;
-    color: white;
+    letter-spacing: 10px;
 }
 .feature-area {
     width: 100%;
@@ -203,19 +186,13 @@ section.about-gallery-options {
     position: relative;
     left: -5%;
 }
-.feature-area h3 {
-    color: #ffb548;
-}
 .feature-area p {
-    text-transform: capitalize;
     line-height: 22px;
-    color: white;
     right: -5%;
     position: relative;
 }
 
 /* * accordion */
-/* Style the buttons that are used to open and close the accordion panel */
 .accordion {
     background-color: rgba(0, 0, 0, 0);
     cursor: pointer;
@@ -226,20 +203,30 @@ section.about-gallery-options {
     outline: none;
     transition: 0.4s;
 }
-
-/* TODO: edit this active area for acordion */
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-
 .accordion:hover {
-    background-color: rgba(256, 256, 256, 0.5);
+    background-color: rgba(156, 156, 156, 0.5);
 }
-
-/* Style the accordion panel. Note: hidden by default */
 .panel {
     padding: 0 18px;
     display: none;
     overflow: hidden;
 }
+/* * media query */
+@media (max-width: 980px) {
+    .features main {
+        width: 60%;
+        left: 40%;
+        -ms-transform: translate(-25%, -50%);
+        transform: translate(-25%, -50%);
+    }
+    .features h3 {
+        letter-spacing: 1px;
+    }
+    .features h1 {
+        letter-spacing: 5px;
+    }
+}
+/* ! end features section */
 
 /* ! syst req section */
 .syst-req {
