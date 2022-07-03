@@ -279,77 +279,85 @@ h3 {
 /* ! end syst req section */
 
 /* ! quotes section */
-.press-quotes {
+section.press-quotes {
     background-image: url(../images/top-score-bg.png);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100vw;
-    color: white;
-    display: flex;
-    align-items: center;
 }
 .press-quotes h1 {
-    font-size: 56px;
-    letter-spacing: 4px;
+    letter-spacing: 12px;
 }
+.press-quotes .text-area {
+    width: 65%;
+}
+/* * card */
 .card {
     background-color: rgba(255, 255, 255, 0.08);
     width: 450px;
+    /* TODO: white layout error */
+    margin: 1rem;
+    padding: 1rem;
 }
-.card .c-one {
+.card.c-one {
     position: relative;
     left: 22%;
 }
-.card .c-three {
+.card.c-two {
     position: relative;
     left: 18%;
 }
 .card .header {
-    display: flex;
-    padding: 1rem 1rem 1rem 1rem;
-}
-.card .body {
-    padding: 0 1rem 1rem 1rem;
+    margin-bottom: 1.5rem;
 }
 .img-container img {
+    width: 65px;
     box-shadow: 8px 4px 2px 2px #ffb548;
     border-radius: 50%;
 }
 h3.name {
-    color: #ffb548;
+    font-size: 24px;
     margin-bottom: 0;
 }
-p.profession,
 p.date {
     margin-bottom: 0;
-    color: rgba(256, 256, 256, 0.5);
+}
+.press-quotes button {
+    background-color: #ffb548;
+    padding: 15px 85px;
 }
 
-.press-quotes .text-area {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
 /* * media query */
 @media (max-width: 980px) {
-    .card {
-        width: 90%;
+    .press-quotes .container-lg {
+        padding: 1.5rem;
     }
-    .card .c-one {
+    .press-quotes .text-area {
+        width: 100%;
+    }
+    .card {
+        width: 100%;
+        margin-left: 0;
+    }
+    .card.c-one {
         position: relative;
         left: 0;
     }
-    .card .c-three {
+    .card.c-two {
         position: relative;
         left: 0;
     }
 }
 @media (max-width: 580px) {
+    .press-quotes h1 {
+        letter-spacing: 4px;
+    }
     .press-quotes {
         height: 100%;
     }
+    .press-quotes button {
+        background-color: #ffb548;
+        padding: 10px 40px;
+    }
 }
+/* ! end quotes section */
 
 /* ! subscribe section */
 .subscribe {
