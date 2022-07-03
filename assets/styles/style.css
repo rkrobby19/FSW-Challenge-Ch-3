@@ -229,54 +229,54 @@ section.features {
 /* ! end features section */
 
 /* ! syst req section */
-.syst-req {
+section.syst-req {
     background-image: url(../images/requirements.png);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100vw;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
-.syst-req h3 {
+h3 {
     font-size: 14px;
-    text-transform: capitalize;
-    text-align: center;
     letter-spacing: 2px;
 }
 .syst-req h1 {
-    font-size: 56px;
-    text-transform: capitalize;
-    letter-spacing: 11px;
+    letter-spacing: 16px;
 }
-
 /* * table container */
 .syst-req .table-container {
-    width: 42%;
+    width: 50%;
     margin-top: 4%;
-    margin-left: 8%;
-}
-.table-container .table {
-    color: white;
-    text-align: left;
-    text-transform: capitalize;
 }
 .table-container .table h3 {
     color: #ffb548;
     text-align: left;
+    letter-spacing: 2px;
 }
-
+.table-container .table p {
+    color: white;
+    letter-spacing: 2px;
+}
 /* * media query */
 @media (max-width: 980px) {
     .syst-req .table-container {
         width: 80%;
     }
+    .syst-req .container-lg {
+        padding: 2rem;
+    }
+    h3.text-center {
+        letter-spacing: 1px;
+    }
     .syst-req h1 {
-        font-size: 40px;
+        letter-spacing: 4px;
     }
 }
+@media (max-width: 380px) {
+    section.syst-req {
+        height: 100%;
+    }
+    .syst-req h1 {
+        letter-spacing: 1px;
+    }
+}
+/* ! end syst req section */
 
 /* ! quotes section */
 .press-quotes {
